@@ -12,7 +12,7 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/Rttf2pt1/Rttf2pt1_{{ version }}.tar.gz
   sha256: 560646d4488bf70edd8f785a99e8208e7fd004014e29cb52b050fb55e7176e2c
 
-build:
+build: 
   merge_build_host: True  # [win]
   number: 0
   rpaths:
