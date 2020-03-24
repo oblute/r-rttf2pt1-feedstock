@@ -25,11 +25,12 @@ requirements:
     - {{ compiler('cxx') }}        # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('m2w64_cxx') }}      # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - posix
+    # - {{posix}}filesystem        # [win]
+    # - {{posix}}make
+    # - {{posix}}sed               # [win]
+    # - {{posix}}coreutils         # [win]
+    # - {{posix}}zip               # [win]
     - libblas
     - libcblas
     - liblapack
