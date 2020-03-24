@@ -30,8 +30,15 @@ requirements:
     - {{posix}}sed               # [win]
     - {{posix}}coreutils         # [win]
     - {{posix}}zip               # [win]
+    - libblas
+    - libcblas
+    - liblapack
   host:
     - r-base
+    - libblas
+    - libcblas
+    - liblapack
+    - posix  # [win]
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
