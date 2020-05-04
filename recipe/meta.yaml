@@ -42,12 +42,12 @@ test:
 
 about:
   home: https://github.com/wch/Rttf2pt1
-  license: file LICENSE
+  license: LicenseRef-BSDLike
   summary: Contains the program 'ttf2pt1', for use with the 'extrafont' package. This product includes software developed by the 'TTF2PT1' Project and its contributors.
   license_family: OTHER
-
   license_file:
     - LICENSE
+
 extra:
   recipe-maintainers:
     - conda-forge/r
