@@ -13,9 +13,9 @@ source:
   sha256: 560646d4488bf70edd8f785a99e8208e7fd004014e29cb52b050fb55e7176e2c
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
-  skip: True  # [win]
+  merge_build_host: true  # [win]
+  number: 1
+  skip: true  # [win]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -24,16 +24,16 @@ requirements:
   build:
     - {{ compiler('c') }}        # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}make
+    - {{ posix }}sed               # [win]
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - {{ native }}gcc-libs         # [win]
 
 test:
   commands:
@@ -42,10 +42,11 @@ test:
 
 about:
   home: https://github.com/wch/Rttf2pt1
-  license: BSD-like
-  summary: Contains the program 'ttf2pt1', for use with the 'extrafont' package. This product
-    includes software developed by the 'TTF2PT1' Project and its contributors.
+  license: LicenseRef-BSDLike
+  summary: Contains the program 'ttf2pt1', for use with the 'extrafont' package. This product includes software developed by the 'TTF2PT1' Project and its contributors.
   license_family: OTHER
+  license_file:
+    - LICENSE
 
 extra:
   recipe-maintainers:
